@@ -260,7 +260,7 @@ section{
 }
 .linea_divisoria{
     margin-top: 2rem;
-    margin-bottom: 13rem;
+    margin-bottom: 2rem;
     width: 85%;
     left: 5%;
     height: 0.1rem;
@@ -623,6 +623,9 @@ textarea{
 @media (min-width: 1200px){    
     html{
         background-color: white;
+    }
+    .linea_divisoria{
+        margin-bottom: 14rem;
     }
     /*BARRA DE NAVEGACION */
     .product {
