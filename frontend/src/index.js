@@ -1,4 +1,4 @@
-import HomeScreen from "./screens/Homescreen.js";
+import HomeScreen from "./screens/HomeScreen.js";
 import AboutScreen from "./screens/AboutScreen.js";
 import { hideLoading, parseRequestUrl, showLoading } from "./utils.js";
 import Error404Screen from "./screens/Error404Screen.js";
