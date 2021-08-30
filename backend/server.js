@@ -3,7 +3,7 @@ import cors from 'cors';
 import data from './data';
 import mongoose  from 'mongoose';
 import bodyParser from 'body-parser';
-import path, { join } from 'path';
+import path from 'path';
 import config from './config';
 import userRouter from './routers/UserRoute';
 import orderRouter from './routers/orderRouter';
