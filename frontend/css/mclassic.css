@@ -1,0 +1,757 @@
+:root{
+    --funeteheding: 'Montserrat', Montserrat;
+    --funeteparrafos: 'Roboto' , Roboto;  
+}
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+.linea_divisoria3,
+.slider,
+.product2{
+    display: block;
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;/*1rem = 10px*/
+    background-color: #DFC6DC;
+}
+h1,p,a{
+    font-family: var(--funeteheding);
+    color: white;
+    text-decoration: none;
+}
+body{
+    overflow-x: hidden;
+    width: 100%;   
+}
+section{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+/*BARRA DE NAVEGACION*/
+
+/*BARRA DE NAVEGACION*/
+.nav{
+    display: inline-flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 6;
+    width: 100%;
+    background-color: #61008C;
+    height: 3.5rem;
+}
+.icon_logo{
+    height: 3rem;
+    margin:0 0 0 1.7rem;
+    padding-top: 0.3rem;
+    cursor: pointer;
+}
+.iconos_nav{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 4rem;
+}
+.iconos_nav{
+    display: flex; 
+    flex-direction: row;  
+}
+.bolsadecompra{
+    width: 6rem;
+    margin-top: 0.6rem;
+    padding-right: 1rem;
+    color: white;
+    
+}
+.burger_contenedor{
+    margin-top: 0.4rem;
+    cursor: pointer;
+
+}
+.burger div{
+    width: 2rem;
+    height: 0.1rem;
+    background-color: white;
+    margin-top: 0.8rem;
+ 
+}
+.menu{
+    margin-top: 0.5rem;
+    margin-left: 1rem;
+    height: 1.6rem;
+    grid-column: 4;    
+}
+
+.sidemenu.active{
+    transform: translateX(0%);   
+}
+
+.sidemenu{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr); 
+    font-size: 1.5rem;
+    font-family: var(--funeteheding);
+    letter-spacing: 0.5rem;
+    text-transform: uppercase;
+    position: relative;
+    width: 100%;
+    height: 80rem;
+    transform: translateX(100%);
+    transition: transform 0.5s ease-in-out; 
+    z-index: 30;  
+    position: fixed; 
+}
+
+.sidemenu:before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #3869A3;
+    position: absolute;
+    opacity: 0.6;
+}
+.sidemenu p, 
+.sidemenu img{
+    position: relative;
+}
+.sidemenu_salida{
+    top: 1.5rem;
+    left: 1.5rem;
+}
+.mujeresmenu{
+    width: 100%;
+    height: 100%;
+    background-image: url(../img/mujeres.png) ;
+    background-size: cover;
+}
+.mujeres_texto{
+    top: 13.5rem;
+    text-align: center;
+    color: #3D1C3E;
+}
+.hombresmenu{
+    background-image: url(../img/IMG_0163.JPG) ;
+    background-size: cover;
+    text-align: center;
+}
+.hombres_texto{
+    top: 17rem;
+    color: #7B8395;
+}
+.accesoriosmenu{
+    text-align: center;
+    background-color: rgba(134, 37, 77, 1);
+}
+.accesoriosmenu span{
+    font-size: 1rem;
+}
+.accesorios_texto{
+    top: 15rem;
+    color: #650000;
+}
+.nosotrosmenu{
+    background-image: url(../img/nosotros.png) ;
+    background-size: cover;
+    text-align: center;
+}
+.nosotros_texto{
+    top: 16rem;
+    color: #abb9c9;
+}
+
+/*SECCION PRODUCTO*/
+
+.product{
+    width: 100%;
+    height: 120rem;
+    padding-top: 6rem;
+    padding-left: 2rem;
+    background-image: url(../img/IMG_0074.JPG);
+    position: relative;
+    background-size:cover;
+    background-position: center;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-color: rgb(110, 21, 145);
+    
+}
+.overlay{
+    width: 100%;
+    height: 100%;
+    background-color: #c6b3d1;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+   
+}
+.overlay_over {
+    position: relative;
+    z-index: 1;
+    text-align: left;
+}
+.producto_mujeres,
+.producto_tipo,
+.producto_info{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 0.3rem;
+    padding-bottom: 0.5rem;
+}
+
+.linea_divisoria{
+    margin-top: 4rem;
+    margin-bottom: 12rem;
+    width: 85%;
+    left: 5%;
+    height: 0.1rem;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+.producto_info{
+    width: 90%;
+    text-align: center;
+    position: relative;
+    left: 5%;
+    padding-top: 4rem;
+}
+#talla,
+#talla1,
+#talla2,
+#color,
+#bordado1,
+#bordado2{
+    position: relative;
+    padding: 0.8rem 1.2rem;
+    background-color: #000000;
+    color: whitesmoke;
+    z-index: 1;
+    margin-top: 2rem;
+    width: 80%;
+    appearance: none;
+    border-color: transparent;
+    text-align: center;
+}
+
+/*BORDADO*/
+.bordado-accordion{
+    display: none;
+}
+.bordado_container{
+    width: 80%;
+    height: 3.25rem;
+    position: relative;
+    z-index: 2;
+    left: 10%;
+    background-color: #000000;
+    margin-top: 1rem;
+    text-align: center;
+    display: block;
+}
+.bordado_container label{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 5%;
+}
+.bordado-item {
+    width: 100%;
+    display: flex;
+    padding-top: 0.8rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    cursor: pointer;
+}
+.bordado-item label::before{
+    content: "+";
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    font-size: 2rem;
+    color: white;
+}
+.bordado-subitem{
+    max-height: 0;
+    overflow: hidden;
+    width: 100%;
+    background-color: #F1E6F3;
+    position: absolute;
+    top: 100%;
+    transition: max-height 650ms;
+}
+.bordado-subitem p{
+    padding: 1rem;
+    color: black;
+    text-align: left;
+    left: 0;
+}
+.bordado-subitem::before{
+    content: "";
+    position: absolute;
+    width: 0.5rem;
+    height: 100%;
+    background-color: #61008C;
+    left: 0;
+}
+
+#resultado{
+    text-align: right;
+    padding-right: 10%;
+}
+.bordado-accordion:checked ~ .bordado-subitem{
+    max-height: 40rem;
+    overflow: scroll;
+}
+.bordado-accordion:checked ~ .bordado-item::before{
+    content: "_";
+    position: absolute;
+    top: -20%;
+    right: 10%;
+    font-size: 2rem;
+    color: white;
+}
+
+
+textarea{
+    width: 80%;
+    resize: none;
+    border-color: transparent;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #D8D3D3;
+    color: #61008C;
+    font-family: var(--funeteheding);
+    font-size: 1.2rem;
+    
+}
+#boton-archivo{
+    background-color: #D8D3D3;
+    border-color: transparent;
+    height: 10rem;
+    color: #62008c59;
+    text-align: center;
+    padding: 1rem;
+    width: 80%;
+    cursor: pointer;
+    margin: 1rem 0 2rem 0;
+}
+.visor-archivo{
+    display: block;
+    position: relative;
+}
+
+/*MYCOMPRA*/
+.mycompra{
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    font-family: var(--funeteheding);
+    font-weight: 400;
+    font-size: 1.3rem;
+    height: 4.5rem;
+    width: 80%;
+    border-radius:1rem;
+    border-color: #8d2222;
+    background-color: #9b2f2f;
+    color: white;
+    margin-top: 5rem;
+    left: 10%;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    text-shadow:0px 1px 0px #8D2626;
+    /* -webkit-box-shadow: 0px 3px 8px 5px rgba(99, 7, 7, 0.5); 
+    box-shadow: 0px 3px 8px 5px rgba(105, 29, 29, 0.5); */
+ 
+}
+.mycompra:hover {
+	background-color:#6d1b1b;
+}
+.mycompra img{
+    width: 6%;
+    margin: 0 0.5rem 0 0.5rem ; 
+}
+
+/*footer*/
+.footer{
+    display: grid;
+    grid-template-rows: 8;
+    margin-top: 1.5rem;
+    width: 100%;
+    background-color:#61008C;
+    text-align: center;
+}
+.redes{    
+    display: flex;
+    justify-content: space-evenly;
+}
+.redes_iconos img{
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;    
+    height: 2rem;
+}
+.linea_redes{
+    border-top: 0.16rem solid #DFC6DC;
+    height: 1rem;
+    width: 90%;
+    margin-left: 2rem;
+}
+.footer_logo{
+    height: 3rem;
+}   
+.footer_links,
+.footer_info_localizacion{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 0.5rem;
+    
+}
+.footer_links_mains{
+    text-decoration: none;
+}
+.footer_sublinks,
+.footer_sublinks1,
+.footer_sublinks2,
+.footer_sublinks3,
+.footer_info,
+.footer_copyrigth{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 0.5rem;
+}
+.margin1,
+.margin2,
+.margin3{
+    margin-right: 1.2rem;
+}
+.margin2_2{
+    margin-left: 0.5rem;
+}
+.footer_sublinks_arrows{
+    height: 0.5rem;
+    padding-right: 0.5rem;
+}
+.footer_info{
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.footer_copyrigth{
+    height: 2rem;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.footer_copyrigth img{
+    padding-bottom: 0.5rem;
+    padding-right: 0.5rem;
+    height: 1.5rem;
+}
+
+/*ELEMENTOS PARA EL MQ*/
+.icon_logoes,
+.menues,
+.boton-hero,
+.nosotros-lema_imagenes,
+.redes2es,
+.logohombreses,
+.logohombreses2,
+.hero_anatomyes{
+    display: none;
+}
+@media (min-width: 1200px){    
+    html{
+        background-color: white;
+    }
+    
+    /*BARRA DE NAVEGACION */
+    
+    .nav{
+        background-color: black;
+        height: 6rem;
+        z-index: 7;
+    }
+    .icon_logo,
+    .hero_anatomy_logo,
+    .nosotros-lema_imagen{
+        display: none;
+    }
+    .icon_logoes{
+        display: block;
+        width: 80%;
+        position: relative;
+        top: 2rem;
+        left: 0;
+    }
+    .icon_logoes:hover{
+        animation: beat 2s infinite;
+    }
+    @keyframes beat {
+        0%{width: 85%;}
+        50%{width: 82%;}
+        100%{width: 85%;}
+        
+    }
+    .menues{
+        display: flex;
+        width: 33.3%;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 1.2rem;
+        margin: auto;
+        position: relative;
+        letter-spacing: 0.3rem;
+        animation: blink 2s ;
+    }
+    
+    .naves{
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-right: 5.9rem;
+        text-decoration: none;
+        position: relative;
+        height: inherit;
+        transition: linear 0.3s;
+    }
+    .naves:after{
+        content: "";
+        width: 0%;
+        height: 0.3rem;
+        background-color: #8fbaef6e;
+        position: absolute;
+        left: 0;
+        top: 5rem;
+        transition: ease-in 0.3s;
+    }
+    .naves:hover:after{
+        width: 100%;
+    }
+    .naves:hover{
+        color: #8FBBEF;
+    }
+    .iconos_nav{
+        top: 1.2rem;
+    }
+       /*SIDEMENU*/
+       .mujeresmenu{
+        background-image: url(../img/IMG_0115.JPG),
+                          url(../img/IMG_0114.JPG);
+        background-repeat:no-repeat, repeat;
+        background-size: 50%;
+    }
+    .mujeres_texto:hover{
+        color: ivory;
+        background-color: #c64aca8e;
+    }
+    .hombresmenu{
+        background-image: url(../img/IMG_2696.JPG),
+                          url(../img/IMG_0163.JPG);
+        background-repeat:no-repeat, repeat;
+        background-size: 50%;
+    }
+    .hombres_texto:hover{
+        color: ivory;
+        background-color: #3868a38a;
+
+    }
+    .nosotrosmenu{
+        background-image: url(../img/IMG_0157.JPG),
+                          url(../img/nosotros.png);
+        background-repeat:no-repeat, repeat;
+        background-size: 50%;
+    }
+    .nosotros_texto{
+        color: rgb(252, 236, 236);
+    }
+    .nosotros_texto:hover{
+        color: #0238AE;
+        background-color: #a7b9cf8a;
+    }
+
+    /*PRODUCTO*/
+    .product{
+        background-image: none;
+        height: 100rem;
+    }
+    .overlay{
+        background-color: white;
+        height: 100rem;
+    }
+    .producto_mujeres{
+        margin-top: 4rem;
+    }
+    .overlay_over{
+        width: 90% ;
+        height: 70rem;
+        left: 4rem;
+    }
+    .producto_fotos{
+        position: relative;
+        left: 8%;
+        height: 50rem;
+    }
+    .producto_preview{
+        width: 35rem;
+        height: 50rem;
+    }
+    .producto_preview_2{
+        width: 15rem;
+        height: 50rem;
+        position: relative;
+        z-index: 2;
+    }
+    .producto_preview_active{
+        width: 30rem;
+        height: 45rem;
+    }
+    .cones{
+        width: 50%;
+        position: relative;
+        transform: translateX(100%);
+        z-index: 1;
+        top: -62rem;
+        right: 6rem;
+        text-align: center;
+    }
+    .section-info{
+        position: relative;
+        top: -55rem;
+    }
+    #talla,
+    #talla1,
+    #talla2,
+    #color,
+    .bordado_container{
+        width: 50%;
+    }
+    .bordado_container{
+        left: 25%;
+    }
+    .mycompra{
+        width: 20%;
+        left: 40%;
+    }
+    .producto_info{
+        width: 40%;
+        left: 30%;
+    }
+    
+    /*FOOTER*/
+    .redes{
+        justify-content: center;
+        position: relative;
+    }
+    .footer a:hover,
+    .footer p:hover,
+    .footer h1:hover{
+        color: #8FBBEF;
+    }
+    .redes img{
+        padding: 0 6rem;
+        margin-bottom:3rem;
+        margin-top: 2rem;
+    }
+    .linea_redes{
+        display: none;
+    }
+    .footer{
+        background-color: rgb(0, 0, 0);
+    }
+    .footer p{
+        font-size: 1.4rem;
+    }
+    .footer_links_mains p{
+        font-size: 1.8rem;
+        letter-spacing: 0.3rem;
+    }
+    .footer_logo{
+        display: none;
+    }
+    .footer_sublinks_arrows{
+        display: none;
+        font-size: 1.1rem;
+    }
+    .nosotros,
+    .mujeres,
+    .accesorios{
+        display: block;
+        flex-direction: column;
+        color: black;
+    }
+    .linea-hombres{
+        position: relative;
+        left: 2%;
+    }
+    .noticiasubi1{
+        position: relative;
+        left: 25%;
+    }
+    .lineanosotros{
+        position: relative;
+        left: 2.6%;
+    }
+    .footer_info{
+        margin: 4rem 0 4rem 0;
+    }
+    .redes2{
+        display: none;
+    }
+    .redes2es{
+        display: block;
+        height: 100%;
+    }
+    .linea_divisoria{
+        margin-top: 5rem;
+        margin-bottom: 13rem;
+        width: 85%;
+        left: 5%;
+        height: 0.1rem;
+        background-color: #000000;
+        position: relative;
+        z-index: 1;
+    }
+    
+
+    .contenedor_loader_logo{
+        display: flex;
+        width: 70rem;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 27%;
+    
+    }
+    .loader_logo{
+        width: 10%;
+        animation: beat2 1s infinite;
+    }
+}
+
+
+
