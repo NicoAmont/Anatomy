@@ -29,7 +29,7 @@ app.get('/api/paypal/clientId', (req,res) => {
 app.get('/api/products', (req,res) =>{
     res.send(data.products);
 });
-app.use(express.static(path.join(__dirname, '/../frontend')));
+app.use(express.static(path.join(__dirname, '/../frontend/main.js')));
 
 
 app.get('api/products/:id', (req,res) =>{
