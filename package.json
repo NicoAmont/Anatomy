@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node backend/server.js",
-    "build": "rmdir /s dist && babel backend -d dist",
+    "build": "babel backend -d dist",
     "serve": "node dist/server.js",
     "heroku-prebuild":"cd frontend && npm install --dev",
     "heroku-postbuild":"npm run build && cd frontend && npm install && npm run build"
