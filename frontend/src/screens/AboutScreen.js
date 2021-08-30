@@ -7,7 +7,7 @@ const AboutScreen = {
             window.scroll({
                 top: 40,
                 left: 0,
-                behavior: 'smooth'
+                behavior: 'smooth' 
             });
         }
         reloadscreen();
