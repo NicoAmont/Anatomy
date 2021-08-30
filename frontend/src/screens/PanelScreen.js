@@ -3,7 +3,7 @@ import { getSummary } from '../api';
 import Chartist from 'Chartist'
 import { formatter } from "../config";
 
-let summary = {};
+let summary = {}; 
 const DashboardScreen = {
     after_render: () => {
         new Chartist.Line(
