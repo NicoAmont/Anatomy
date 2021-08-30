@@ -1,21 +1,12 @@
 import DashboardMenu from "../components/Dashboard"; 
 import { getSummary } from '../api';
-import Chartist from 'Chartist'
+
 import { formatter } from "../config";
 
 let summary = {}; 
 const DashboardScreen = {
     after_render: () => {
-        new Chartist.Line(
-            '.ct-chart-line',
-            {
-                labels: summary.dailyOrders.map((x) => x._id),
-                series: [summary.dailyOrders.map((x) => x.sales)],
-                },
-                {
-                showArea: true,
-                }
-            );
+        
     },
     render: async () => {
         summary = await getSummary();
