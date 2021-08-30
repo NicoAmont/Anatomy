@@ -3,6 +3,7 @@ import cors from 'cors';
 import data from './data';
 import mongoose  from 'mongoose';
 import bodyParser from 'body-parser';
+import mime from 'mime';
 import path from 'path';
 import config from './config';
 import userRouter from './routers/UserRoute';
@@ -29,10 +30,21 @@ app.get('/api/paypal/clientId', (req,res) => {
 app.get('/api/products', (req,res) =>{
     res.send(data.products);
 });
-app.use(express.static(path.join(__dirname, '/../frontend')));
+
+
+const setHeadersOnStatic = (res, path, stat) => {
+    const type = mime.getType(path);
+    res.set('content-type', type);
+};
+const staticOptions = {
+setHeaders: setHeadersOnStatic
+}
+app.use(express.static(path.join(__dirname, '/../frontend'), staticOptions));
 app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '/../frontend/index.html'));
 });
+
+
 
 app.get('api/products/:id', (req,res) =>{
     const product = data.products.find( (x) => x._id === req.params.id)
