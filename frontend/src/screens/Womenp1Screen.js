@@ -503,9 +503,10 @@ const Womenp1Screen = {
             
                 <p class="contenedor-valor_texto">Valor : </p>
                 <p id="prueba1" class="contenedor-valor_texto"> </p>
-                <p ><span class="descuento">( $115.000.00 )</span> </p>
+                <img style="width:4rem; position:relative; top:-2.5rem;" src="img/promo.png" alt="">
             </div>
             <button id="add-button" class="mycompra">Añade a <img src="img/mycompra.png" alt=""> compra</button>
+            
 
     `
     

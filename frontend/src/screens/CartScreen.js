@@ -110,7 +110,7 @@ const CartScreen = {
             <link rel="stylesheet" href="css/cart.css">
         </head>
         
-        <div class="mycompra" >
+        <div class="mycompra2" >
             <svg width="198" height="73" viewBox="0 0 198 73" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect y="22" width="4" height="26" fill="#75FFDE"/>
                 <rect y="21.5811" width="3.78905" height="29.7256" transform="rotate(-24.6588 0 21.5811)" fill="#75FFDE"/>

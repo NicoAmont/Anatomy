@@ -211,8 +211,8 @@ section{
 }
 
 .linea_divisoria{
-    margin-top: 4rem;
-    margin-bottom: 12rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
     width: 85%;
     left: 5%;
     height: 0.1rem;
@@ -728,7 +728,7 @@ textarea{
     }
     .linea_divisoria{
         margin-top: 5rem;
-        margin-bottom: 13rem;
+        margin-bottom: 7rem;
         width: 85%;
         left: 5%;
         height: 0.1rem;
