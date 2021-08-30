@@ -3,6 +3,7 @@ import cors from 'cors';
 import data from './data';
 import mongoose  from 'mongoose';
 import bodyParser from 'body-parser';
+import path, { join } from 'path';
 import config from './config';
 import userRouter from './routers/UserRoute';
 import orderRouter from './routers/orderRouter';
@@ -28,6 +29,7 @@ app.get('/api/paypal/clientId', (req,res) => {
 app.get('/api/products', (req,res) =>{
     res.send(data.products);
 });
+app.use(express.static(path.join(__dirname, '/../frontend')));
 
 app.get('api/products/:id', (req,res) =>{
     const product = data.products.find( (x) => x._id === req.params.id)
@@ -41,6 +43,6 @@ app.use((err, req, res, next) =>{
     const status = err.name && err.name === 'ValidationError'? 400: 500;
     res.status(status).send({ message: err.message });
 });
-app.listen(4500, () => {
+app.listen(config.PORT, () => {
     console.log('serve at http://localhost:4500');  
 });

@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "start": "babel-node backend/server.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rmdir /s dist && babel backend -d dist",
+    "serve": "node dist/server.js",
+    "heroku-prebuild":"cd frontent && npm install --dev",
+    "heroku-postbuild":"npm run build && cd frontend && npm install && npm run build"
   },
   "author": "Nicolas Amezquita <nicolas.amezquita.m@gmail.com>",
   "license": "ISC",
@@ -27,5 +30,9 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-plugin-import": "^2.23.4",
     "nodemon": "^2.0.4"
+  },
+  "engines":{
+    "node":"12.4.0",
+    "npm":"6.9.0"
   }
 }
