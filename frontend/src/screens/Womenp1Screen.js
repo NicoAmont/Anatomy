@@ -16,6 +16,45 @@ export var textobordado = [94050513100];
 
 const Womenp1Screen = {
     after_render: async () => {
+        /*BARRA DE NAVEGACION*/ 
+
+        const selectElemen = (s) => document.querySelector(s);
+        selectElemen('.open').addEventListener('click', () => {
+            selectElemen('.sidemenu').classList.add('active');
+        });
+        selectElemen('.close').addEventListener('click', () => {
+            selectElemen('.sidemenu').classList.remove('active');
+        });
+        const closenav = () => {    
+            const wom = document.getElementsByClassName('close2')
+            if (wom){
+                const selectElemen = (s) => document.querySelector(s);
+                selectElemen('.close2').addEventListener('click', () => {
+                    selectElemen('.sidemenu').classList.remove('active');
+                });
+            }
+        };
+        closenav();
+        const closenav2 = () => {    
+            const wom = document.getElementsByClassName('close3')
+            if (wom){
+                const selectElemen = (s) => document.querySelector(s);
+                selectElemen('.close3').addEventListener('click', () => {
+                    selectElemen('.sidemenu').classList.remove('active');
+                });
+            }
+        };
+        closenav2();
+        const closenav3 = () => {    
+            const wom = document.getElementsByClassName('close4')
+            if (wom){
+                const selectElemen = (s) => document.querySelector(s);
+                selectElemen('.close4').addEventListener('click', () => {
+                    selectElemen('.sidemenu').classList.remove('active');
+                });
+            }
+        };
+        closenav3();
         const preview = document.querySelector('.producto_preview_active');
         const productosg = document.querySelector('.producto_preview_2');
         const prodcutog = document.querySelectorAll('.producto_preview_2 img');

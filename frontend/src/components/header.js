@@ -1,7 +1,48 @@
 import { getUserInfo } from "../localStorage"
 
 const Header = {
-    render: () => {
+        after_render: () =>{
+                    /*BARRA DE NAVEGACION*/ 
+
+            const selectElemen = (s) => document.querySelector(s);
+            selectElemen('.open').addEventListener('click', () => {
+                selectElemen('.sidemenu').classList.add('active');
+            });
+            selectElemen('.close').addEventListener('click', () => {
+                selectElemen('.sidemenu').classList.remove('active');
+            });
+            const closenav = () => {    
+                const wom = document.getElementsByClassName('close2')
+                if (wom){
+                    const selectElemen = (s) => document.querySelector(s);
+                    selectElemen('.close2').addEventListener('click', () => {
+                        selectElemen('.sidemenu').classList.remove('active');
+                    });
+                }
+            };
+            closenav();
+            const closenav2 = () => {    
+                const wom = document.getElementsByClassName('close3')
+                if (wom){
+                    const selectElemen = (s) => document.querySelector(s);
+                    selectElemen('.close3').addEventListener('click', () => {
+                        selectElemen('.sidemenu').classList.remove('active');
+                    });
+                }
+            };
+            closenav2();
+            const closenav3 = () => {    
+                const wom = document.getElementsByClassName('close4')
+                if (wom){
+                    const selectElemen = (s) => document.querySelector(s);
+                    selectElemen('.close4').addEventListener('click', () => {
+                        selectElemen('.sidemenu').classList.remove('active');
+                    });
+                }
+            };
+            closenav3();
+        },
+                render: () => {
         const{name, isAdmin} = getUserInfo();
         return `
         <nav class="nav">
@@ -82,48 +123,8 @@ const Header = {
             </a>
         </div>
         `
-    },
-    after_render: () =>{
-                /*BARRA DE NAVEGACION*/ 
-
-        const selectElemen = (s) => document.querySelector(s);
-        selectElemen('.open').addEventListener('click', () => {
-            selectElemen('.sidemenu').classList.add('active');
-        });
-        selectElemen('.close').addEventListener('click', () => {
-            selectElemen('.sidemenu').classList.remove('active');
-        });
-        const closenav = () => {    
-            const wom = document.getElementsByClassName('close2')
-            if (wom){
-                const selectElemen = (s) => document.querySelector(s);
-                selectElemen('.close2').addEventListener('click', () => {
-                    selectElemen('.sidemenu').classList.remove('active');
-                });
-            }
-        };
-        closenav();
-        const closenav2 = () => {    
-            const wom = document.getElementsByClassName('close3')
-            if (wom){
-                const selectElemen = (s) => document.querySelector(s);
-                selectElemen('.close3').addEventListener('click', () => {
-                    selectElemen('.sidemenu').classList.remove('active');
-                });
-            }
-        };
-        closenav2();
-        const closenav3 = () => {    
-            const wom = document.getElementsByClassName('close4')
-            if (wom){
-                const selectElemen = (s) => document.querySelector(s);
-                selectElemen('.close4').addEventListener('click', () => {
-                    selectElemen('.sidemenu').classList.remove('active');
-                });
-            }
-        };
-        closenav3();
-            },
+    }
+    
 };
 
 export default Header; 
