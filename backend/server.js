@@ -29,7 +29,10 @@ app.get('/api/paypal/clientId', (req,res) => {
 app.get('/api/products', (req,res) =>{
     res.send(data.products);
 });
-app.use(express.static(path.join(__dirname, '/../frontend'))); 
+app.use(express.static(path.join(__dirname, '/../frontend')));
+app.get('*', (req, res) => {
+    res.sendFile(path.join(__dirname, '/../frontend/index.html'));
+});
 
 app.get('api/products/:id', (req,res) =>{
     const product = data.products.find( (x) => x._id === req.params.id)
