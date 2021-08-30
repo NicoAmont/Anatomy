@@ -214,7 +214,7 @@ const OrderScreen = {
                             </li>
                             <div class"pagotransferencia">
                                 <li >
-                                    <img class ="pagoimg" src="./img/bancolombia.jpg" />
+                                    <img class ="pagoimg" src="./img/Bancolombia.jpg" />
                                 </li>
                                 <li>
                                     <div>Cuenta de Ahorros</div> 

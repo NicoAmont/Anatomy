@@ -36,7 +36,7 @@ const HomeScreen = {
         <!--SECCION HOMBRES-->
         <div class="secciones" >
             <div class="seccion seccionmujeres" >
-                <img class="seccion_izq" src="img/IMG_0115.jpg" alt="Anatomy hombre">
+                <img class="seccion_izq" src="img/IMG_0115.JPG" alt="Anatomy hombre">
                 <img class="seccion_der" src="img/IMG_0114.JPG" alt="Anatomy hombre">
                 <a href="/#/women" class="seccion_boton mujeres" >mujeres</a>  
                 <div class="logof2"></div>     
