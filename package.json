@@ -7,7 +7,7 @@
     "start": "babel-node backend/server.js",
     "build": "rmdir /s dist && babel backend -d dist",
     "serve": "node dist/server.js",
-    "heroku-prebuild":"cd frontent && npm install --dev",
+    "heroku-prebuild":"cd frontend && npm install --dev",
     "heroku-postbuild":"npm run build && cd frontend && npm install && npm run build"
   },
   "author": "Nicolas Amezquita <nicolas.amezquita.m@gmail.com>",
