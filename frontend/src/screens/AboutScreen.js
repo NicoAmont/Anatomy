@@ -24,8 +24,8 @@ const AboutScreen = {
             <img class="nosotrosn_img" src="/img/IMG_0064.JPG" alt="Nosotros Imagen">
             <p class="hero_texto"><span class="hero_texto_2" >No dejes la</span><br>Comodidad<br>de lado</p>
             <img class="hero_anatomy_logo" src="img/anatomynosotros.png" alt="LogoAnatomyHead">
-            <a href="mujeres.html" class="boton-hero btn-ella">PARA ELLA</a>
-            <a href="hombres.html" class="boton-hero btn-el">PARA EL</a>
+            <a href="/#/women" class="boton-hero btn-ella">PARA ELLA</a>
+            <a href="/#/men" class="boton-hero btn-el">PARA EL</a>
         </div>  
     </header>
     <section class="nosotros-lema" id="nosotros-lema">
