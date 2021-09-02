@@ -93,10 +93,10 @@ const CartScreen = {
                 name: product.name,
                 image: product.image,
                 price: product.price + precionew1 + precionew12,
-                tallac: tallacnew || tallacnew1,
-                tallap: tallapnew || tallapnew1,
+                tallac: tallacnew1 || tallacnew,
+                tallap: tallapnew1 || tallapnew,
                 color: colornew || colornew2,
-                bordadonombre: textobordado[0] || textobordado1[0], 
+                bordadonombre: textobordado1[0] || textobordado[0], 
                 countInStock: product.countInStock,
                 qty: 1,
                 
