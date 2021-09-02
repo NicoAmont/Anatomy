@@ -96,7 +96,8 @@ const CartScreen = {
                 tallac: tallacnew1 || tallacnew,
                 tallap: tallapnew1 || tallapnew,
                 color: colornew || colornew2,
-                bordadonombre: textobordado[0] || textobordado1[0], 
+                bordadonombre: textobordado[0], 
+                bordadonombre1: textobordado1[0], 
                 countInStock: product.countInStock,
                 qty: 1,
                 
@@ -168,7 +169,7 @@ const CartScreen = {
                                                         <p class="sub-info">Talla camiseta :  ${item.tallac}</p>
                                                         <p class="sub-info">Talla pantalon :  ${item.tallap}</p>
                                                         <p class="sub-info">Color          :  ${item.color}</p>
-                                                        <p class="sub-info">Texto bordado:               ${item.bordadonombre}</p>
+                                                        <p class="sub-info">Texto bordado:               ${product_id <= 3 ? item.bordadonombre : item.bordadonombre1}</p>
                                                     </div>
 
                                                     
