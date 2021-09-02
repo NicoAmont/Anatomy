@@ -3,7 +3,7 @@ import { formatter } from "../config";
 import { getCartItems, setCartItems } from "../localStorage";
 import { parseRequestUrl, redirectUser, rerender } from "../utils";
 import { colornew, precionew1, precionew2, tallacnew, tallapnew, textobordado } from "./Womenp1Screen";
-import { colornew, precionew1, precionew2, tallacnew, tallapnew, textobordado } from "./Menp1Screen";
+import { colornew2} from "./Menp1Screen";
 
 export const addToCart = (item, forceUpdate = false) => {
     let cartItems = getCartItems();
@@ -91,8 +91,8 @@ const CartScreen = {
                 price: product.price + precionew1 + precionew2,
                 tallac: tallacnew,
                 tallap: tallapnew,
-                color: colornew,
-                bordadonombre: textobordado[0],
+                color: colornew || colornew2,
+                bordadonombre: textobordado[0], 
                 countInStock: product.countInStock,
                 qty: 1,
                 

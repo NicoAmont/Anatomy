@@ -5,7 +5,7 @@ import { hideLoading, parseRequestUrl, showLoading } from '../utils';
 
 export var tallacnew;
 export var tallapnew;
-export var colornew;
+export var colornew2;
 
 export var precionew1 = 0;
 export var precionew2 = 0;
@@ -187,7 +187,7 @@ const Menp1Screen = {
     function seleccionartalla3() {
         let colore = document.getElementById('color');
         colore.addEventListener('change',()=>{
-            colornew = colore.value;            
+            colornew2 = colore.value;            
         });
     }
     seleccionartalla3();
