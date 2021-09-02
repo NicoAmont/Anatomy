@@ -3,13 +3,13 @@ import { getProduct, getProducts, tallan } from '../api';
 import { formatter, seleccionartalla } from '../config';
 import { hideLoading, parseRequestUrl, showLoading } from '../utils';
 
-export var tallacnew;
-export var tallapnew;
+export var tallacnew1;
+export var tallacnew1;
 export var colornew2;
 
-export var precionew1 = 0;
-export var precionew2 = 0;
-export var textobordado = [94050513100];
+export var precionew12 = 0;
+export var precionew22 = 0;
+export var textobordado1 = [94050513100];
 
 
 
@@ -124,31 +124,31 @@ const Menp1Screen = {
             function enviarDatos () {
                 document.location.hash = `/cart/${request.id}`;
                 if(myText.value !== 'Ninguno'){
-                    textobordado.push(document.getElementById('textonombre').innerHTML);
-                    if(textobordado[0] == 94050513100){
-                        textobordado.splice(0,1);
+                    textobordado1.push(document.getElementById('textonombre').innerHTML);
+                    if(textobordado1[0] == 94050513100){
+                        textobordado1.splice(0,1);
                     }
                 }else{
-                    textobordado.push('Ninguno');
-                    if(textobordado[0] == 94050513100){
-                        textobordado.splice(0,1);
+                    textobordado1.push('Ninguno');
+                    if(textobordado1[0] == 94050513100){
+                        textobordado1.splice(0,1);
                     }
                 }
         
                 
             };
             if(valorcolor !== "0" && valortallac !== "0" && valortallap !== "0"){
-                if(precionew1 == 3000 || myText.value !== 'Ninguno'){  
+                if(precionew12 == 3000 || myText.value !== 'Ninguno'){  
                     if(myText.value == 'Ninguno'){
                         swal('¡Ups! Te faltan datos', 'Agrega el texto que deseas bordar', 'warning')
-                    }else if(precionew1 !== 3000){
+                    }else if(precionew12 !== 3000){
                         swal('¡Ups! Te faltan datos', 'Agrega el valor del bordado al total', 'warning')
                     }else{
                         enviarDatos();
                     }  
                 }else{  
                     enviarDatos();
-                    console.log(textobordado[0])
+                    console.log(textobordado1[0])
                 }
 
             }else{
@@ -171,7 +171,7 @@ const Menp1Screen = {
     function seleccionartalla() {
         let tallace = document.getElementById('talla1');
         tallace.addEventListener('change',()=>{
-            tallacnew = tallace.value;            
+            tallacnew1 = tallace.value;            
         });
     }
     seleccionartalla();
@@ -179,7 +179,7 @@ const Menp1Screen = {
     function seleccionartalla2() {
         let tallape = document.getElementById('talla2');
         tallape.addEventListener('change',()=>{
-            tallapnew = tallape.value;            
+            tallacnew1 = tallape.value;            
         });
     }
     seleccionartalla2();
@@ -206,22 +206,22 @@ const Menp1Screen = {
         const sltcv = document.getElementById('prueba1');
         sltcv.textContent = pformat(parseInt(product.price));
         bordado1.addEventListener('change',()=>{
-            precionew1 = parseInt(bordado1.value);
-            precionew2 = parseInt(bordado2.value);
+            precionew12 = parseInt(bordado1.value);
+            precionew22 = parseInt(bordado2.value);
             console.log()
-            if(precionew1 !== 0 | precionew1 !== null){
-                if(precionew2 !== 6000 ) {
-                    sltcv.textContent = pformat(parseInt(product.price) + precionew1 );
+            if(precionew12 !== 0 | precionew12 !== null){
+                if(precionew22 !== 6000 ) {
+                    sltcv.textContent = pformat(parseInt(product.price) + precionew12 );
                     
                 }else{
-                    sltcv.textContent = pformat(parseInt(product.price) + precionew1 + precionew2);
+                    sltcv.textContent = pformat(parseInt(product.price) + precionew12 + precionew22);
                 }
             
             }else{
 
-                if(precionew1 == 0 && (precionew2 !== 0 | precionew2 !== null)){
+                if(precionew12 == 0 && (precionew22 !== 0 | precionew22 !== null)){
 
-                    sltcv.textContent = pformat(parseInt(product.price) + precionew2);
+                    sltcv.textContent = pformat(parseInt(product.price) + precionew22);
                     
                 }else{
 
@@ -232,12 +232,12 @@ const Menp1Screen = {
             
         });
         bordado2.addEventListener('change',()=>{
-            precionew2 = parseInt(bordado2.value);  
-            if(precionew2 !== 0 | precionew2 !== null){
-                if(precionew1 !==0 | precionew1 !== null) {
-                    sltcv.textContent = pformat(parseInt(product.price) + precionew1 + precionew2 );
+            precionew22 = parseInt(bordado2.value);  
+            if(precionew22 !== 0 | precionew22 !== null){
+                if(precionew12 !==0 | precionew12 !== null) {
+                    sltcv.textContent = pformat(parseInt(product.price) + precionew12 + precionew22 );
                 }else{
-                    sltcv.textContent = pformat(parseInt(product.price) + precionew2 );
+                    sltcv.textContent = pformat(parseInt(product.price) + precionew22 );
                 }
                 
             }else{
