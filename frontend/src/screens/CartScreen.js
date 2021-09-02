@@ -3,7 +3,7 @@ import { formatter } from "../config";
 import { getCartItems, setCartItems } from "../localStorage";
 import { parseRequestUrl, redirectUser, rerender } from "../utils";
 import { colornew, precionew1, precionew2, tallacnew, tallapnew, textobordado } from "./Womenp1Screen";
-import { colornew2, precionew12, precionew22, tallacnew1, tallapnew1} from "./Menp1Screen";
+import { colornew2, precionew12, precionew22, tallacnew1, tallapnew1, textobordado1 } from "./Menp1Screen";
 
 export const addToCart = (item, forceUpdate = false) => {
     let cartItems = getCartItems();
@@ -68,6 +68,8 @@ const CartScreen = {
             precionew22 = 0;
             textobordado.splice(0,1);
             textobordado[0] = 94050513100;
+            textobordado1.splice(0,1);
+            textobordado1[0] = 94050513100;
         }, 2000);
 
         document.getElementById('checkout-button').addEventListener('click', () => {
@@ -94,7 +96,7 @@ const CartScreen = {
                 tallac: tallacnew1 || tallacnew,
                 tallap: tallapnew1 || tallapnew,
                 color: colornew || colornew2,
-                bordadonombre: textobordado[0], 
+                bordadonombre: textobordado[0] || textobordado1[0], 
                 countInStock: product.countInStock,
                 qty: 1,
                 
