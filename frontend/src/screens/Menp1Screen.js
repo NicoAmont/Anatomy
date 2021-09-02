@@ -4,7 +4,6 @@ import { formatter, seleccionartalla } from '../config';
 import { hideLoading, parseRequestUrl, showLoading } from '../utils';
 
 export var tallacnew1;
-export var tallacnew1;
 export var colornew2;
 
 export var precionew12 = 0;
