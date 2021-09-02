@@ -9,7 +9,7 @@ export var colornew2;
 
 export var precionew12 = 0;
 export var precionew22 = 0;
-export var textobordado1 = [94050513100];
+export var textobordado = [94050513100];
 
 
 
@@ -124,14 +124,14 @@ const Menp1Screen = {
             function enviarDatos () {
                 document.location.hash = `/cart/${request.id}`;
                 if(myText.value !== 'Ninguno'){
-                    textobordado1.push(document.getElementById('textonombre').innerHTML);
-                    if(textobordado1[0] == 94050513100){
-                        textobordado1.splice(0,1);
+                    textobordado.push(document.getElementById('textonombre').innerHTML);
+                    if(textobordado[0] == 94050513100){
+                        textobordado.splice(0,1);
                     }
                 }else{
-                    textobordado1.push('Ninguno');
-                    if(textobordado1[0] == 94050513100){
-                        textobordado1.splice(0,1);
+                    textobordado.push('Ninguno');
+                    if(textobordado[0] == 94050513100){
+                        textobordado.splice(0,1);
                     }
                 }
         
@@ -148,7 +148,7 @@ const Menp1Screen = {
                     }  
                 }else{  
                     enviarDatos();
-                    console.log(textobordado1[0])
+                    console.log(textobordado[0])
                 }
 
             }else{
