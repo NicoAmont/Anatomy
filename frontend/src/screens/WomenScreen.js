@@ -44,7 +44,7 @@ const WomenScreen = {
         <img class="seccion_der" src="img/IMG_2903.JPG" alt="Anatomy hombre">
         <a href="/#/women/${products[0]._id}" class="seccionp_boton" ><img src="img/IMG_2921.JPG" alt=""></a> 
         <p class="seccion_texto">Vive el estilo,</p>   
-        <p class="seccion_texto texto_corrido">sientete <span class="texto_italic">"classic"</span></p>   
+        <p class="seccion_texto texto_corrido">siéntete <span class="texto_italic">"classic"</span></p>   
     </div>
     <img class="seccion_anatomy_logo" src="img/logomujeres.png" alt="LogoAnatomyHead">      
     </div>      

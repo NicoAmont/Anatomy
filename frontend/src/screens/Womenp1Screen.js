@@ -181,7 +181,7 @@ const Womenp1Screen = {
                     if(myText.value == 'Ninguno'){
                         swal('¡Ups! Te faltan datos', 'Agrega el texto que deseas bordar', 'warning')
                     }else if(precionew1 !== 3000){
-                        swal('¡Ups! Te faltan datos', 'Agrega el valor del vordado al total', 'warning')
+                        swal('¡Ups! Te faltan datos', 'Agrega el valor del bordado al total', 'warning')
                     }else{
                         enviarDatos();
                     }  

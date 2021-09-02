@@ -31,7 +31,7 @@ const MenScreen = {
     <img class="nosotrosh_img" src="img/IMG_0101.JPG" alt="Nosotros Imagen">
     <img class="logohombreses" src="img/logohombreses.png" alt="">
     <img class="logohombreses2" src="img/IMG_2696.jpg" alt="">
-    <p class="herohom_texto">CONCENTRATE EN<br> <span class="hero_texto2" > CALIDAD</span></p>
+    <p class="herohom_texto">CONCÉNTRATE EN<br> <span class="hero_texto2" > CALIDAD</span></p>
     <img class="hero_anatomy_logo" src="img/logohombres.png" alt="LogoAnatomyHead">
     </div>  
 

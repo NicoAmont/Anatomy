@@ -142,7 +142,7 @@ const Menp1Screen = {
                     if(myText.value == 'Ninguno'){
                         swal('¡Ups! Te faltan datos', 'Agrega el texto que deseas bordar', 'warning')
                     }else if(precionew1 !== 3000){
-                        swal('¡Ups! Te faltan datos', 'Agrega el valor del vordado al total', 'warning')
+                        swal('¡Ups! Te faltan datos', 'Agrega el valor del bordado al total', 'warning')
                     }else{
                         enviarDatos();
                     }  
@@ -425,20 +425,20 @@ const Menp1Screen = {
 
             <select class="producto_seleccion-talla" name="producto_talla" id="talla1">
                 <option selected value="0">TALLA CAMISETA</option>
-                <option value="XS">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
             </select>
             
             <select class="producto_seleccion-talla" name="producto_talla" id="talla2">
                 <option selected value="0">TALLA PANTALON</option>
-                <option value="S">XS</option>
                 <option value="S">S</option>
                 <option value="M">M</option>
                 <option value="L">L</option>
                 <option value="XL">XL</option>
+                <option value="XXL">XXL</option>
             </select>
             <select class="producto_seleccion-talla " name="producto_talla" id="color">
                 <option selected value="0">COLOR</option>

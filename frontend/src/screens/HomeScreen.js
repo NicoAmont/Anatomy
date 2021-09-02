@@ -27,7 +27,7 @@ const HomeScreen = {
                 <div class="logof1"></div>
                 <div class="imgf1"></div>
                 
-                <a href="/#/about" class="seccion_boton herobtn"><p> CONOCENOS </p></a>  
+                <a href="/#/about" class="seccion_boton herobtn"><p> CONÓCENOS </p></a>  
             </div> 
         
         </header>

@@ -3,6 +3,7 @@ import { formatter } from "../config";
 import { getCartItems, setCartItems } from "../localStorage";
 import { parseRequestUrl, redirectUser, rerender } from "../utils";
 import { colornew, precionew1, precionew2, tallacnew, tallapnew, textobordado } from "./Womenp1Screen";
+import { colornew, precionew1, precionew2, tallacnew, tallapnew, textobordado } from "./Menp1Screen";
 
 export const addToCart = (item, forceUpdate = false) => {
     let cartItems = getCartItems();
@@ -215,7 +216,7 @@ const CartScreen = {
         </div>
         <div class="envios-info">
             IMPORTANTE: Envios fuera de los alrededores de Bogota presentan cargos 
-            por transporte. Los precios estan sujetos a modifiaciones de temporada. 
+            por transporte. Los precios estan sujetos a modificaciones de temporada. 
             En la bolsa de compra puedes dejar temporalmente los productos que deseas, 
             modificarlos o eliminarlos.
         </div>
