@@ -4,6 +4,7 @@ import { formatter, seleccionartalla } from '../config';
 import { hideLoading, parseRequestUrl, showLoading } from '../utils';
 
 export var tallacnew1;
+export var tallapnew1;
 export var colornew2;
 
 export var precionew12 = 0;
@@ -178,7 +179,7 @@ const Menp1Screen = {
     function seleccionartalla2() {
         let tallape = document.getElementById('talla2');
         tallape.addEventListener('change',()=>{
-            tallacnew1 = tallape.value;            
+            tallapnew1 = tallape.value;            
         });
     }
     seleccionartalla2();
