@@ -3,7 +3,7 @@ import { formatter } from "../config";
 import { getCartItems, setCartItems } from "../localStorage";
 import { parseRequestUrl, redirectUser, rerender } from "../utils";
 import { colornew, precionew1, precionew2, tallacnew, tallapnew, textobordado } from "./Womenp1Screen";
-import { colornew2, precionew12, precionew22, tallacnew1, tallapnew1, textobordado } from "./Menp1Screen";
+import { colornew2, precionew12, precionew22, tallacnew1, tallapnew1} from "./Menp1Screen";
 
 export const addToCart = (item, forceUpdate = false) => {
     let cartItems = getCartItems();
