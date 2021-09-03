@@ -101,7 +101,7 @@ const CartScreen = {
                 tallac: tallacnew1 || tallacnew,
                 tallap: tallapnew1 || tallapnew,
                 color: colornew || colornew2,
-                bordadonombre: textobordado[0],
+                bordadonombre: parseInt(request.id) <= 333333333333333333333333 ? textobordado[0] : textobordado1[0],
                 countInStock: product.countInStock,
                 qty: 1,
                 
