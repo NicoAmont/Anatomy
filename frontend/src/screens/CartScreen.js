@@ -209,7 +209,7 @@ const CartScreen = {
                                                         <button type="button" class="delete-button delete-btn" id="${item.product}">
                                                             x 
                                                         </button>
-                                                        <a href="/#/women/${item.product}" class="modificarlinea delete-btn" id="${item.product}">
+                                                        <a href="${parseInt(request.id) <= 333333333333333333333333 ? "/#/women/"+item.product : "/#/men/"+item.product}" class="modificarlinea delete-btn" id="${item.product}">
                                                             Modificar Linea 
                                                         </a>
                                                     </div>
