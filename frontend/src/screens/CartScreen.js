@@ -62,19 +62,24 @@ const CartScreen = {
     
         //eliminar variables 
         setTimeout(() => {
-            precionew1 = 0;
-            precionew12 = 0;
-            precionew2 = 0;
-            precionew22 = 0;
-            textobordado.splice(0,1);
-            textobordado[0] = 94050513100;
-            textobordado1.splice(0,1);
-            textobordado1[0] = 94050513100;
+            
+                precionew1 = 0;
+                precionew2 = 0;
+                precionew12 = 0;
+                precionew22 = 0;
+                textobordado.shift();
+                textobordado[0] = 94050513100;
+                textobordado1.shift();
+                textobordado1[0] = 94050513100;
+            
+            
+            
         }, 2000);
 
         document.getElementById('checkout-button').addEventListener('click', () => {
             document.location.hash = '/signin';
         });
+        
     },
 
     render: async () => {
@@ -96,8 +101,7 @@ const CartScreen = {
                 tallac: tallacnew1 || tallacnew,
                 tallap: tallapnew1 || tallapnew,
                 color: colornew || colornew2,
-                bordadonombre: textobordado[0], 
-                bordadonombre1: textobordado1[0], 
+                bordadonombre: parseInt(request.id) <= 333333333333333333333333 ? textobordado[0] : textobordado1[0],
                 countInStock: product.countInStock,
                 qty: 1,
                 
@@ -105,6 +109,16 @@ const CartScreen = {
             
         }
         const cartItems = getCartItems();
+
+
+
+        console.log(textobordado);
+        console.log(textobordado1);
+        parseInt(request.id) <= 333333333333333333333333 ? console.log("1") : console.log("2");
+
+
+
+
         
         const pformat = formatter.format;
         
@@ -169,7 +183,7 @@ const CartScreen = {
                                                         <p class="sub-info">Talla camiseta :  ${item.tallac}</p>
                                                         <p class="sub-info">Talla pantalon :  ${item.tallap}</p>
                                                         <p class="sub-info">Color          :  ${item.color}</p>
-                                                        <p class="sub-info">Texto bordado:               ${product_id <= 3 ? item.bordadonombre : item.bordadonombre1}</p>
+                                                        <p class="sub-info">Texto bordado:               ${item.bordadonombre}</p>
                                                     </div>
 
                                                     
