@@ -9,7 +9,7 @@ export var colornew2;
 
 export var precionew12 = 0;
 export var precionew22 = 0;
-export var textobordado1 = [94050513100];
+export var textobordado1 = ["Sin bordardo"];
 
 
 
@@ -125,12 +125,12 @@ const Menp1Screen = {
                 document.location.hash = `/cart/${request.id}`;
                 if(myText.value !== 'Ninguno'){
                     textobordado1.push(document.getElementById('textonombre').innerHTML);
-                    if(textobordado1[0] == 94050513100){
+                    if(textobordado1[0] == "Sin bordardo"){
                         textobordado1.splice(0,1);
                     }
                 }else{
                     textobordado1.push('Ninguno');
-                    if(textobordado1[0] == 94050513100){
+                    if(textobordado1[0] == "Sin bordardo"){
                         textobordado1.splice(0,1);
                     }
                 }

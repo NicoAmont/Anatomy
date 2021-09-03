@@ -68,9 +68,9 @@ const CartScreen = {
                 precionew12 = 0;
                 precionew22 = 0;
                 textobordado.shift();
-                textobordado[0] = 94050513100;
+                textobordado[0] = "Sin bordado";
                 textobordado1.shift();
-                textobordado1[0] = 94050513100;
+                textobordado1[0] = "Sin bordado";
             
             
             
