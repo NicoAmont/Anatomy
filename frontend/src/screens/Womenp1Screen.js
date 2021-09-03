@@ -9,7 +9,7 @@ export var colornew;
 
 export var precionew1 = 0;
 export var precionew2 = 0;
-export var textobordado = [94050513100];
+export var textobordado = ["Sin bordardo"];
 
 
 
@@ -164,12 +164,12 @@ const Womenp1Screen = {
                 document.location.hash = `/cart/${request.id}`;
                 if(myText.value !== 'Ninguno'){
                     textobordado.push(document.getElementById('textonombre').innerHTML);
-                    if(textobordado[0] == 94050513100){
+                    if(textobordado[0] == "Sin bordardo"){
                         textobordado.splice(0,1);
                     }
                 }else{
                     textobordado.push('Ninguno');
-                    if(textobordado[0] == 94050513100){
+                    if(textobordado[0] == "Sin bordardo"){
                         textobordado.splice(0,1);
                     }
                 }
