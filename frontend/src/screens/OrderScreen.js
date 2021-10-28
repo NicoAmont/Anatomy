@@ -191,6 +191,7 @@ const OrderScreen = {
                         </ul>
                     </div>
                     <h1 class="reference">Referencia de Compra Num ${_id}</h1>
+                    <h1 class="reference2" style:"color: orange; font-size: 1.3rem;">Envianos el comprobante de pago para iniciar con el proceso de envío y cambiar el estado de tu compra.</h1>
                     
                 </div>
                 
@@ -212,14 +213,43 @@ const OrderScreen = {
                                 <div>Total</div> 
                                 <div>${pformat(totalPrice)}</div> 
                             </li>
-                            <div class"pagotransferencia">
+                            <div class="pagotransferencia">
+                                <li class="payorderinfo"> 
+                                    <h2>
+                                    PAGOS CON TRANSFERENCIA 
+                                    </h2>
+                                </li>
                                 <li >
                                     <img class ="pagoimg" src="./img/Bancolombia.jpg" />
                                 </li>
                                 <li>
                                     <div>Cuenta de Ahorros</div> 
-                                    <div>No 11112455123</div> 
+                                    <br>
+                                    <div># 207-1311-9564</div> 
+                                    <div>CC. 1'233.889.653</div> 
                                 </li>
+                                <li >
+                                    <img class ="pagoimg" src="./img/nequi.png" />
+                                </li>
+                                <li>
+                                    <div>Tel 3115395629</div> 
+                                </li>
+                                <li >
+                                    <img class ="pagoimg" src="./img/davivienda.png" />
+                                </li>
+                                <li>
+                                    <div>Cuenta de Ahorros</div> 
+                                    <div>No 4884-1588-2247</div> 
+                                    <div>CC. 1'233.889.653</div> 
+                                </li>
+                                <li class="payorderinfo"> 
+                                    <h2>
+                                    PAGO CONTRA-ENTREGA 
+                                    </h2>
+                                </li>
+                                    <h1 style="color: black; font-size: 1.2rem;">
+                                    Si desas este medio de pago envianos un mensaje con la confirmación y el numero de orden.
+                                    </h1>
                             </div>
                             
                             <li>

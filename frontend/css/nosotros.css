@@ -356,20 +356,28 @@ body{
     font-size: 1.8rem;
     letter-spacing: 0.1rem;
 }
+.caracteristicas_contenedor{
+    width: 100%;
+    height: 100%;
+}
 .caracteristicas_carrito{
     padding-top: 8.4rem;
     padding-bottom: 3.2rem;
 }
 .caracteristicas_envios,
 .caracteristicas_garantia{
-    text-decoration: underline;
-    font-size: 1.9rem;
+    text-transform: uppercase;
+    font-size: 2.4rem;
     letter-spacing: 0.20rem;
 }
 .caracteristicas_envios_2{
-    font-size: 1.5rem;
+    width: 30rem;
+    font-size: 1.2rem;
     margin-top: 2.3rem;
     letter-spacing: 0.2rem;
+    text-align: center;
+    position: relative;
+    left: 6%;
 }
 .caracteristicas_fin{
     padding-bottom: 10rem;
@@ -383,10 +391,17 @@ body{
 .redes2es{
     display: none;
 }
-
+@media (min-width: 668px){    
+    .caracteristicas_envios_2{
+        left: 30%;
+    }
+}
 @media (min-width: 970px){
     html{
         background-color: white;
+    }
+    .caracteristicas_envios_2{
+        left: 0%;
     }
     /*BARRA DE NAVEGACION */
     .nav{
