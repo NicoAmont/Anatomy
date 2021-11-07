@@ -8,6 +8,7 @@ const orderSchema = new mongoose.Schema(
         image: { type: String, required: true },
         tallac: { type: String, required: true },
         tallap: { type: String, required: true },
+        color: { type: String, required: true },
         bordadonombre: { type: String, required: true },
         price: { type: Number, required: true },
         qty: { type: Number, required: true },
